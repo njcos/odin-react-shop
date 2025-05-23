@@ -36,6 +36,8 @@ export function ItemView() {
       } else {
         setCartItems((cartItems) => [...cartItems, newItem]);
       }
+    } else {
+      setCartItems((cartItems) => [...cartItems, newItem]);
     }
   };
 
