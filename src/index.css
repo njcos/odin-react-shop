@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  font-family: "helvetica";
+  height: 100vh;
+}
+
+body {
+  background-color: #efefef;
+}
+
+button {
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: 1.2px solid rgb(200, 200, 200);
+  border-radius: 0.15em;
+  background-color: #efefef;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}

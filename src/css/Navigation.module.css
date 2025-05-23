@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 4rem 0 4rem;
+}
+
+.store {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+
+.items {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 100;
+  color: black;
+}
+.cartIcon {
+  color: black;
+}
+
+.navRight {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}

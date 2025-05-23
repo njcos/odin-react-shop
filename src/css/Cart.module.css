@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItems {
+  border: 1.2px solid rgb(200, 200, 200);
+  border-radius: 0.35em;
+  padding: 1rem 4rem 1rem 4rem;
+  margin: 6rem;
+  gap: 2em;
+  box-shadow: 3px 3px 5px rgba(2, 2, 2, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.totals > button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.noItems {
+  display: flex;
+  margin: 6rem;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px rgba(2, 2, 2, 0.1);
+  border-radius: 0.35em;
+  border: 1.2px solid rgb(200, 200, 200);
+}
