@@ -22,17 +22,20 @@ export function ItemView() {
     const newItem = { ...item, quantity: 1 };
     console.log(cartItems.length);
     if (cartItems.length !== 0) {
-      setCartItems(
-        cartItems.map((prevItem) => {
-          if (prevItem.id === item.id) {
-            return { ...prevItem, quantity: (prevItem.quantity += 1) };
-          } else {
-            setCartItems((cartItems) => [...cartItems, newItem]);
-          }
-        })
-      );
-    } else {
-      setCartItems((cartItems) => [...cartItems, newItem]);
+      const itemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+      if (itemInCart) {
+        setCartItems(
+          cartItems.map((prevItem) => {
+            if (prevItem.id === item.id) {
+              return { ...prevItem, quantity: prevItem.quantity + 1 };
+            } else {
+              return prevItem;
+            }
+          })
+        );
+      } else {
+        setCartItems((cartItems) => [...cartItems, newItem]);
+      }
     }
   };
 
