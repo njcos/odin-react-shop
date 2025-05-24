@@ -13,7 +13,11 @@ export function Cart() {
   };
 
   if (cartItems.length === 0) {
-    return <div className={styles.noItems}>No items in cart.</div>;
+    return (
+      <div className={styles.wrapper}>
+        <div className={styles.noItems}> No items in cart.</div>;
+      </div>
+    );
   }
   return (
     <>

@@ -45,3 +45,20 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 400px) {
+  .listImage {
+    width: 100%;
+  }
+  .itemTextContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    flex-direction: column;
+    padding: 0 0 6rem 0;
+  }
+  .quantity {
+    justify-content: center;
+  }
+}

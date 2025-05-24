@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 4rem 0 4rem;
+  align-items: center;
 }
 
 .store {
@@ -36,4 +37,20 @@
   gap: 3rem;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    padding: 2rem 2rem 0 2rem;
+  }
+  .navRight {
+    gap: 1rem;
+  }
+
+  .store {
+    font-size: 1.5rem;
+  }
+  .cart {
+    font-size: 1.5rem;
+  }
 }
